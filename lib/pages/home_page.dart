@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/models/answer_item_model.dart';
 import 'package:quizapp/widgets/answer_item.dart';
 
 class HomePage extends StatelessWidget {
@@ -6,25 +7,25 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Map<String, dynamic>> firstAnswers = [
-      {
-        "title": "Football",
-        "onPressed": () {
+    List<AnswerItemModel> firstAnswers = [
+      AnswerItemModel(
+        title: "Football",
+        onPressed: () {
           debugPrint("Football");
         },
-      },
-      {
-        "title": "BasketBall",
-        "onPressed": () {
-          debugPrint("BasketBall");
-        },
-      },
-      {
-        "title": "Volleyball",
-        "onPressed": () {
+      ),
+      AnswerItemModel(
+        title: "Volleyball",
+        onPressed: () {
           debugPrint("Volleyball");
         },
-      },
+      ),
+      AnswerItemModel(
+        title: "BasketBall",
+        onPressed: () {
+          debugPrint("BasketBall");
+        },
+      ),
     ];
 
     return Scaffold(

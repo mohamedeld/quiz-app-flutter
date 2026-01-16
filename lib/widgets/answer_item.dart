@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/models/answer_item_model.dart';
 
 class AnswerItem extends StatelessWidget {
-  final Map<String, dynamic> item;
+  final AnswerItemModel item;
   const AnswerItem({super.key, required this.item});
 
   @override
@@ -12,8 +13,8 @@ class AnswerItem extends StatelessWidget {
         height: 60,
         width: double.infinity,
         child: ElevatedButton(
-          onPressed: item["onPressed"],
-          child: Text(item["title"]),
+          onPressed: item.onPressed,
+          child: Text(item.title),
         ),
       ),
     );
