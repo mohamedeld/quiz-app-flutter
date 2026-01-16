@@ -7,27 +7,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<AnswerItemModel> firstAnswers = [
-      AnswerItemModel(
-        title: "Football",
-        onPressed: () {
-          debugPrint("Football");
-        },
-      ),
-      AnswerItemModel(
-        title: "Volleyball",
-        onPressed: () {
-          debugPrint("Volleyball");
-        },
-      ),
-      AnswerItemModel(
-        title: "BasketBall",
-        onPressed: () {
-          debugPrint("BasketBall");
-        },
-      ),
-    ];
-
     return Scaffold(
       appBar: AppBar(title: Text("Home")),
       body: Center(

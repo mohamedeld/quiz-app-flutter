@@ -6,3 +6,24 @@ class AnswerItemModel {
 
   AnswerItemModel({required this.title, required this.onPressed});
 }
+
+List<AnswerItemModel> firstAnswers = [
+  AnswerItemModel(
+    title: "Football",
+    onPressed: () {
+      debugPrint("Football");
+    },
+  ),
+  AnswerItemModel(
+    title: "Volleyball",
+    onPressed: () {
+      debugPrint("Volleyball");
+    },
+  ),
+  AnswerItemModel(
+    title: "BasketBall",
+    onPressed: () {
+      debugPrint("BasketBall");
+    },
+  ),
+];
